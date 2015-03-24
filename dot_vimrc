@@ -1,0 +1,29 @@
+" Add this line.
+set nocompatible
+filetype off
+execute pathogen#infect()
+
+" Set up vundle
+call vundle#begin()
+" let Vundle manage Vundle, required.
+Plugin 'gmarik/Vundle.vim'
+" let vundle manage bufexplorer plugin.
+Bundle 'jlanzarotta/bufexplorer'
+syntax on
+filetype plugin indent on
+" User overrides
+" 1 tab == 2 spaces
+set shiftwidth=2 tabstop=2 softtabstop=2
+" 80 ruler
+set cc=80
+" No folding
+set nofoldenable
+call vundle#end()
+filetype plugin indent on
+" color scheme
+syntax enable
+set t_Co=256
+"let g:solarized_termcolors=256
+colorscheme solarized
+set background=dark
+
